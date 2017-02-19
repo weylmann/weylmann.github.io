@@ -11,19 +11,16 @@
     
 
     
-    <meta name="description" content="标题
-测试\(x+\sqrt{x-1}=1\) \[x^2+y^2+z^2-xy-yz-zx=\dfrac12\]">
+    <meta name="description" content="标题测试$x+\sqrt{x-1}=1$$$x^2+y^2+z^2-xy-yz-zx=\dfrac12$$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Test Latex">
 <meta property="og:url" content="http://yoursite.com/2017/02/19/Test-Latex/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="标题
-测试\(x+\sqrt{x-1}=1\) \[x^2+y^2+z^2-xy-yz-zx=\dfrac12\]">
+<meta property="og:description" content="标题测试$x+\sqrt{x-1}=1$$$x^2+y^2+z^2-xy-yz-zx=\dfrac12$$">
 <meta property="og:updated_time" content="2017-02-19T05:15:43.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Test Latex">
-<meta name="twitter:description" content="标题
-测试\(x+\sqrt{x-1}=1\) \[x^2+y^2+z^2-xy-yz-zx=\dfrac12\]">
+<meta name="twitter:description" content="标题测试$x+\sqrt{x-1}=1$$$x^2+y^2+z^2-xy-yz-zx=\dfrac12$$">
 
     
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -103,8 +100,7 @@
 		
 		</div>
 		
-		<h3 id="标题">标题</h3>
-<p>测试<span class="math inline">\(x+\sqrt{x-1}=1\)</span> <span class="math display">\[x^2+y^2+z^2-xy-yz-zx=\dfrac12\]</span></p>
+		<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>测试$x+\sqrt{x-1}=1$<br>$$x^2+y^2+z^2-xy-yz-zx=\dfrac12$$</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -470,6 +466,40 @@ var _hmt = _hmt || [];
 <!-- Tiny_search Begin -->
 
 <!-- Tiny_search End -->
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
 
   </body>
 </html>

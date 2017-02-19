@@ -11,25 +11,19 @@
     
 
     
-    <meta name="description" content="再次测试
-如果之前不加 mathjax: true 还能显示latex 吗？有下标的\(x_1+x_2+\cdots+x_n=1\).，和 没有下标的\(x+\sqrt{x-1}=\frac12\)
-标题二
-这是另一个 \[\frac1x+\frac1y=\frac1z\]">
+    <meta name="description" content="再次测试如果之前不加 mathjax: true 还能显示latex 吗？有下标的$x_1+x_2+\cdots+x_n=1$.，和没有下标的$x+\sqrt{x-1}=\frac12$
+标题二这是另一个$$\frac1x+\frac1y=\frac1z$$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="pandoc renderer">
 <meta property="og:url" content="http://yoursite.com/2017/02/19/pandoc-renderer/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="再次测试
-如果之前不加 mathjax: true 还能显示latex 吗？有下标的\(x_1+x_2+\cdots+x_n=1\).，和 没有下标的\(x+\sqrt{x-1}=\frac12\)
-标题二
-这是另一个 \[\frac1x+\frac1y=\frac1z\]">
+<meta property="og:description" content="再次测试如果之前不加 mathjax: true 还能显示latex 吗？有下标的$x_1+x_2+\cdots+x_n=1$.，和没有下标的$x+\sqrt{x-1}=\frac12$
+标题二这是另一个$$\frac1x+\frac1y=\frac1z$$">
 <meta property="og:updated_time" content="2017-02-19T13:10:15.406Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pandoc renderer">
-<meta name="twitter:description" content="再次测试
-如果之前不加 mathjax: true 还能显示latex 吗？有下标的\(x_1+x_2+\cdots+x_n=1\).，和 没有下标的\(x+\sqrt{x-1}=\frac12\)
-标题二
-这是另一个 \[\frac1x+\frac1y=\frac1z\]">
+<meta name="twitter:description" content="再次测试如果之前不加 mathjax: true 还能显示latex 吗？有下标的$x_1+x_2+\cdots+x_n=1$.，和没有下标的$x+\sqrt{x-1}=\frac12$
+标题二这是另一个$$\frac1x+\frac1y=\frac1z$$">
 
     
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -109,10 +103,8 @@
 		
 		</div>
 		
-		<h3 id="再次测试">再次测试</h3>
-<p>如果之前不加 mathjax: true 还能显示latex 吗？有下标的<span class="math inline">\(x_1+x_2+\cdots+x_n=1\)</span>.，和 没有下标的<span class="math inline">\(x+\sqrt{x-1}=\frac12\)</span></p>
-<h3 id="标题二">标题二</h3>
-<p>这是另一个 <span class="math display">\[\frac1x+\frac1y=\frac1z\]</span></p>
+		<h3 id="再次测试"><a href="#再次测试" class="headerlink" title="再次测试"></a>再次测试</h3><p>如果之前不加 mathjax: true 还能显示latex 吗？有下标的$x_1+x_2+\cdots+x_n=1$.，和<br>没有下标的$x+\sqrt{x-1}=\frac12$</p>
+<h3 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h3><p>这是另一个<br>$$\frac1x+\frac1y=\frac1z$$</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -470,6 +462,40 @@ var _hmt = _hmt || [];
 <!-- Tiny_search Begin -->
 
 <!-- Tiny_search End -->
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
 
   </body>
 </html>
